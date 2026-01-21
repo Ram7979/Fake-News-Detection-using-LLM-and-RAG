@@ -1,6 +1,6 @@
 # Fake News Detection Using LLM and Retrieval-Augmented Generation (RAG)
 
-## 📌 Project Overview
+## Project Overview
 
 The rapid growth of social media and digital news platforms has significantly accelerated the spread of **fake news**, leading to misinformation, public distrust, and social instability. Traditional machine learning (ML) and deep learning (DL) models are effective at identifying **linguistic and stylistic patterns** of deception, but they **fail to verify factual correctness** against real-world evidence.
 
@@ -19,7 +19,7 @@ This work is based on the research paper **“Fake News Detection Using LLM and 
 
 ---
 
-## 🎯 Key Objectives
+## Key Objectives
 
 * Design a **scalable and interpretable** fake news detection system
 * Combine **statistical learning** with **semantic reasoning**
@@ -28,7 +28,7 @@ This work is based on the research paper **“Fake News Detection Using LLM and 
 
 ---
 
-## 🧠 Core Idea
+## Core Idea
 
 Fake news detection should not be treated as a simple binary classification problem.
 
@@ -41,9 +41,9 @@ The framework follows a **two-layer architecture**:
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
-### 🔹 High-Level Pipeline
+### High-Level Pipeline
 
 1. Data Acquisition & Preprocessing
 2. Feature Representation & Extraction
@@ -53,9 +53,9 @@ The framework follows a **two-layer architecture**:
 
 ---
 
-### 🔹 Architecture Explanation
+### Architecture Explanation
 
-#### 1️⃣ Data Acquisition & Preprocessing
+#### 1)Data Acquisition & Preprocessing
 
 * Noise removal (HTML tags, punctuation, stopwords)
 * Text normalization (lowercasing, lemmatization)
@@ -63,13 +63,13 @@ The framework follows a **two-layer architecture**:
 * Class balancing (equal fake and real samples)
 * Headline + article body fusion
 
-#### 2️⃣ Feature Representation
+#### 2)Feature Representation
 
 * TF-IDF vectorization (50,000 features)
 * Unigrams and bigrams
 * Optional word embeddings (Word2Vec / GloVe)
 
-#### 3️⃣ Machine Learning Classification
+#### 3)Machine Learning Classification
 
 Models used:
 
@@ -82,7 +82,7 @@ Output:
 * Binary label: **Fake / Real**
 * Confidence score
 
-#### 4️⃣ Retrieval-Augmented Verification (RAV)
+#### 4)Retrieval-Augmented Verification (RAV)
 
 * Claim extraction using NLP
 * Web search using **Serper Search API**
@@ -97,7 +97,7 @@ LLM Verdict:
 
 Includes a clear explanation with citations.
 
-#### 5️⃣ Decision Fusion & Explainability
+#### 5)Decision Fusion & Explainability
 
 * ML confidence + LLM verdict are combined
 * Final decision is generated with:
@@ -108,7 +108,7 @@ Includes a clear explanation with citations.
 
 ---
 
-## 📊 Dataset & Experimental Setup
+## Dataset & Experimental Setup
 
 * **Dataset**: Kaggle Fake News Dataset
 * **Total Samples**: ~20,800
@@ -123,9 +123,9 @@ Includes a clear explanation with citations.
 
 ---
 
-## 🧪 Results & Performance
+## Results & Performance
 
-### 🔹 Model Performance Comparison
+### Model Performance Comparison
 
 | Model                     | Accuracy (%) |
 | ------------------------- | ------------ |
@@ -135,7 +135,7 @@ Includes a clear explanation with citations.
 | LSTM (Deep Learning)      | 95.4         |
 | **Hybrid ML + LLM + RAG** | **96.8**     |
 
-### 🔹 Impact of RAG on LLM Accuracy
+### Impact of RAG on LLM Accuracy
 
 | LLM        | Without RAG (%) | With RAG (%) |
 | ---------- | --------------- | ------------ |
@@ -149,7 +149,7 @@ RAG significantly improves factual accuracy and reduces hallucinations.
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 fake-news-detection/
@@ -186,7 +186,7 @@ fake-news-detection/
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ```bash
 git clone https://github.com/your-username/fake-news-detection.git
@@ -198,7 +198,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🔑 Environment Variables
+## Environment Variables
 
 Create a `.env` file:
 
@@ -209,7 +209,7 @@ SERPER_API_KEY=your_serper_key
 
 ---
 
-## ▶️ Usage
+## Usage
 
 ### Train ML Model
 
@@ -252,7 +252,7 @@ python src/inference.py --text "Your news article here"
 
 ---
 
-## 📚 Research Foundation
+## Research Foundation
 
 This project is grounded in:
 
@@ -265,13 +265,13 @@ This project is grounded in:
 
 ## 📄 Research Paper
 
-📌 *Fake News Detection Using LLM and RAG*
+*Fake News Detection Using LLM and RAG*
 (See `/docs/research_paper.pdf`) 
 
 ---
 
 
-## 🙌 Acknowledgements
+## Acknowledgements
 
 * OpenAI (GPT Models)
 * LangChain
