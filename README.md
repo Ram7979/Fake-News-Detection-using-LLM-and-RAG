@@ -237,7 +237,7 @@ python src/inference.py --text "Your news article here"
 
 ---
 
-## 🧩 Why This Project Matters
+## Why This Project Matters
 
 * Moves beyond **style-based detection**
 * Introduces **real-world fact verification**
@@ -263,7 +263,7 @@ This project is grounded in:
 
 ---
 
-## 📄 Research Paper
+## Research Paper
 
 *Fake News Detection Using LLM and RAG*
 (See `/docs/research_paper.pdf`) 
